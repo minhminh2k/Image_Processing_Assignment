@@ -52,11 +52,11 @@ def mean_filter(img, filter_size=3):
 
     pad_width = filter_size // 2
     for i in range(pad_width, height + pad_width):
-            for j in range(pad_width, width + pad_width):
-
-                matrix = padded_image[i - pad_width:i + pad_width + 1, j - pad_width:j + pad_width + 1]
-                mean_value = np.mean(matrix)
-                smoothed_img[i - pad_width, j - pad_width] = mean_value
+        for j in range(pad_width, width + pad_width):
+            matrix = padded_image[i - pad_width:i + pad_width + 1, 
+                                  j - pad_width:j + pad_width + 1]
+            mean_value = np.mean(matrix)
+            smoothed_img[i - pad_width, j - pad_width] = mean_value
 
     return np.array(smoothed_img, np.uint8)
 
@@ -78,11 +78,12 @@ def median_filter(img, filter_size=3):
     pad_width = filter_size // 2
 
     for i in range(pad_width, height + pad_width):
-            for j in range(pad_width, width + pad_width):
+        for j in range(pad_width, width + pad_width):
 
-                matrix = padded_image[i - pad_width:i + pad_width + 1, j - pad_width:j + pad_width + 1].flatten()
-                median_value = np.median(sorted(matrix))
-                smoothed_img[i - pad_width, j - pad_width] = median_value
+            matrix = padded_image[i - pad_width:i + pad_width + 1, 
+                                  j - pad_width:j + pad_width + 1].flatten()
+            median_value = np.median(sorted(matrix))
+            smoothed_img[i - pad_width, j - pad_width] = median_value
 
     return np.array(smoothed_img, np.uint8)
 
