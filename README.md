@@ -6,7 +6,7 @@ Assignments for Image Processing
 
 ### Goals
 
-The goals of this lession [HW1](./HW1) are:
+The goals of this lesson [HW1](./HW1) are:
 
 - Learn basic Python, the structure of Python programs, and common libraries such as Numpy, OpenCV, Matplotlib, etc.
 - Get used to the Google Colaboratory and Virtual Environments such as Anaconda.
@@ -16,7 +16,7 @@ The goals of this lession [HW1](./HW1) are:
 
 ### Goals
 
-The goals of this lession [HW2](./HW2) are:
+The goals of this lesson [HW2](./HW2) are:
 
 - To achieve a comprehensive understanding of how basic image filters operate.
 - To gain a solid understanding of the Fourier Transform (FT) algorithm.
